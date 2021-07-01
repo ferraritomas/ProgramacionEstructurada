@@ -1,0 +1,12 @@
+void cargarArr(int arreglo[MAX]){
+    int i=0, aux;
+    printf("\t[%d]: ",i);
+    scanf("%d",&aux);
+    while(aux!=0 && i<MAX-1){
+        arreglo[i] = aux;
+        i++;
+        printf("\t[%d]: ",i);
+        scanf("%d",&aux);
+    }
+    arreglo[i] = 0;
+}

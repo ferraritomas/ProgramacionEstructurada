@@ -1,0 +1,9 @@
+void transponer(int matriz[F][C]){
+    int f,c,aux;
+    for(f=0;f<F;f++){
+        for(c=0;c<C;c++){
+            printf("%4d",matriz[c][f]);
+        }
+        printf("\n");
+    }
+}

@@ -1,0 +1,3 @@
+1234,pichu,arg,
+9876,tomo,pija,
+1245,flopa,????,

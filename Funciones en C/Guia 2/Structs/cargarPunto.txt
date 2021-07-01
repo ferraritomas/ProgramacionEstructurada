@@ -1,0 +1,7 @@
+struct s_punto cargar_punto(void){
+	struct s_punto resultado = {0,0,0};
+	scanf("%lf",&resultado.x);
+	scanf("%lf",&resultado.y);
+	scanf("%lf",&resultado.z);
+	return resultado;
+}

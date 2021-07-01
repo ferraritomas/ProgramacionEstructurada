@@ -1,0 +1,15 @@
+void ordenarArrI(int arr[TAM]){
+    int i,j;
+    int aux;
+    int cantNum = largoArrI(arr);              /** cantidad de numeros que contiene el arreglo. Es la longuitud del arreglo*/
+    for(i=0;i < cantNum - 1 ; i++) {
+        for(j=i+1; j < cantNum ; j++){
+            if (arr[i] > arr[j]){
+                aux = arr[i];                  /** Intercambio */
+                arr[i] = arr[j];
+                arr[j] = aux;
+            }
+        }
+    }
+
+}

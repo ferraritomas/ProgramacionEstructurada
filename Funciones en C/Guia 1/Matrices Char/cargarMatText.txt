@@ -1,0 +1,17 @@
+void cargarMatText(char matriz[F][C]){
+    int f = 0;
+    int c = 0;
+    char letra;
+    letra = getche();
+    for(f=0 ; letra!=ENTER && f<F; f++){
+        for(c=0 ; letra!=ENTER && c<C; c++){
+            matriz[f][c]=letra;
+            letra = getche();
+        }
+        matriz[f][c] = FIN_CADENA;
+        printf("\n");
+        letra = getche();
+
+    }
+    matriz[f][c]=FIN_CADENA;
+}

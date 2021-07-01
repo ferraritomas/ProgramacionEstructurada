@@ -1,0 +1,10 @@
+void imprimirMatText(char matriz[F][C]){
+    int c = 0 , f = 0;
+    printf("\n");
+    for(f=0;f<F && matriz[f][0] != FIN_CADENA ;f++){
+        for(c=0;c<C && matriz[f][c] != FIN_CADENA;c++){
+            printf("%c",matriz[f][c]);
+        }
+        printf("\n");
+    }
+}

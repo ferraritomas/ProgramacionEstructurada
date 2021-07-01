@@ -1,0 +1,14 @@
+void imprimirMatNumDeArch(int matriz[F][C], int fil, int col){
+    int f,c;
+    for(f=0; f<F && f<fil && matriz[f][0]!=EOF ;f++){
+        for(c=0; c<C && c<col ;c++){
+            if(matriz[f][c]>0 && c==7){
+                printf("\t+%d",matriz[f][c]);
+            }
+            else{
+                printf("\t%d",matriz[f][c]);
+            }
+        }
+        printf("\n");
+    }
+}

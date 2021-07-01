@@ -1,0 +1,13 @@
+void ordenarMatText(char matriz[F][C]){
+    int f = 0, c = 0;
+    char aux[C];
+    for(f=0;matriz[f][0]!=FIN_CADENA;f++){
+        for(c=f+1;matriz[c][0]!=FIN_CADENA;c++){
+           if(strcmp(matriz[f],matriz[c]) > 0){
+                strcpy(aux,matriz[f]);
+                strcpy(matriz[f],matriz[c]);                // Faltaria pasar a minuscula la primera letra para asi comparar mejor
+                strcpy(matriz[c],aux);
+            }
+        }
+    }
+}

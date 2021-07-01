@@ -1,0 +1,17 @@
+void imprimirMatI(int mat[F][C]){
+	int f = 0, c = 0;		 // inicializar indice f y c en 0
+			
+	for (f=0; f<F; f++){
+		for(c=0;c<C;c++){
+			printf("%4d",mat[f][c]);
+		}
+		printf("\n");
+	}
+	
+	/*	for (f=0; f<F && mat[f][0]!=0; f++){*/
+	/*		for(c=0;c<C&&mat[f][c]!=0;c++){*/
+	/*			printf("%4d",mat[f][c]);*/
+	/*		}*/
+	/*		printf("\n");*/
+	/*	}*/
+}

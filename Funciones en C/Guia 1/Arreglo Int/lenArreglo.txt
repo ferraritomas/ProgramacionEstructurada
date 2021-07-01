@@ -1,0 +1,6 @@
+int largoArrI(int arrI[]){
+    /** retorna el largo efectivo (cantidad de numeros) que contiene un arreglo de enteros*/
+    int i;
+    for (i=0; i<TAM-1 && arrI[i]!=0; i++);
+    return i;
+}

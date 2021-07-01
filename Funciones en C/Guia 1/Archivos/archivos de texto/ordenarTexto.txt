@@ -1,0 +1,13 @@
+void ordenarTexto(char matriz[][N]){
+    int f, c;
+    char arregloAux[N] = {0};
+    for(f=0; matriz[f][0]!='\0' ; f++){
+        for(c=0; matriz[c][0]!='\0' ; c++){
+            if(strcmp(matriz[f],matriz[c]) < 0){
+                strcpy(arregloAux,matriz[f]);
+                strcpy(matriz[f],matriz[c]);
+                strcpy(matriz[c],arregloAux);
+            }
+        }
+    }
+}

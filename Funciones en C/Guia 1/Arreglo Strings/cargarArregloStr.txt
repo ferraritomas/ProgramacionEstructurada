@@ -1,0 +1,17 @@
+void cargarText(char arreglo[MAX]){
+    int i=0;
+    char aux;
+    
+    if(i<MAX-1){
+        aux = getche();		     //Leer desde el teclado
+    }
+    while(aux!=ENTER && i<MAX-1){    //Se debe controlar no pasarse del tamaño TAM
+        arreglo[i] = aux;	     //Asignar caracter al arreglo en la posición i
+        i++;			     //cambia posicion del arreglo / es variable de control 
+        if(i<MAX-1){
+            aux = getche();	     //Leer desde el teclado
+        }
+    }
+    arreglo[i] = '\0';		     //Las cadenas de caracteres 'string' siempre contienen el caracter'\0'
+                                    //como elemento terminador indicando el fin de los datos utiles del arreglo.
+}

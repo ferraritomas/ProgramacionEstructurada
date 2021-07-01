@@ -1,0 +1,15 @@
+void imprimirArrC(char arrC[TAM]){
+    /** El arreglo de carcteres se puede impirmir con una solo linea*/
+    printf("%s",arrC);
+
+    /** El arreglo tambien se puede imprimir recorriendolo con un ciclo*/
+    /*
+    int i;
+    printf("\n");
+    for (i=0; arrC[i]!='\0';i++){
+            printf("%c",arrC[i]);
+
+    }
+    printf("\n");
+    */
+}

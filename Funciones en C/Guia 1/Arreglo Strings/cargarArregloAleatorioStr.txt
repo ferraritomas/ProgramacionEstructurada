@@ -1,0 +1,20 @@
+void cargarArrCAle(char arrC[TAM]){
+    /**Carga un arreglo de caracteres con caracteres aleatorios y su tamanio es aleatorio < TAM*/
+
+    int i=0;
+    char aux;
+    int cantCar = aleatorio(0,TAM-2);       /** derterminar la cantidad de caracteres utiles a cargar*/
+
+    if(i<TAM-1)
+        aux = aleatorioL(TIPO_MAY_MIN);     /** generar letra aleatoria y guardar en aux*/
+    while(i<=cantCar && i<TAM-1){           /**i<=cantCar Se controla la cantidad de caracatreres cargados */
+                                            /** Se debe controlar no pasasrse del tamanio TAM*/
+        arrC[i] = aux;                      /** Asignar caracter al arreglo arrC en la posición i*/
+        i++;                                /** cambia posicion del arreglo / es variable de control */
+        if(i<TAM-1)
+            aux = aleatorioL(TIPO_MAY_MIN); /** generar letra aleatoria y guardar en aux*/
+    }
+    arrC[i]='\0';                           /** Las cadenas de caracteres 'string' siempre contienen el caracter'\0'*/
+                                            /** como elemento terminador indicando el fin de los datos utiles del arreglo.*/
+
+}

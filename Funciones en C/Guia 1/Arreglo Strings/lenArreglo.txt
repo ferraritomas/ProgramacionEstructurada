@@ -1,0 +1,5 @@
+int largoArrC(char arr[MAX]){
+    int i;
+    for (i=0; i<MAX-1 && arr[i]!='\0'; i++);
+    return i;
+}

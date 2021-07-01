@@ -1,0 +1,9 @@
+void imprimirMatriz(char matriz[F][C]){
+    int f,c;
+    for(f=0; f<F && matriz[f][0]!='\0';f++){
+        for(c=0; c<C && matriz[f][c]!='\0';c++){
+            printf("%c",matriz[f][c]);
+        }
+        printf("\n");
+    }
+}

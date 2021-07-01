@@ -1,0 +1,6 @@
+int ingresarDatosMatriz(int f, int c){
+	int x;
+	printf("[%d][%d]: ",f,c);
+	scanf("%d", & x); 
+	return x;
+}

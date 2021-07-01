@@ -1,0 +1,3 @@
+void imprimir_punto(struct s_punto punto){
+	printf("(x,y,z) = (%.2lf, %.2lf, %.2lf)\n", punto.x,punto.y,punto.z);
+}

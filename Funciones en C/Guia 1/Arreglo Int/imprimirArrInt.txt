@@ -1,0 +1,12 @@
+void imprimirArrI(int arrI[TAM]){
+
+    /** El arreglo se imprime recorriendolo con un ciclo*/
+
+    int i;
+
+    for (i=0; i<TAM && arrI[i]!=TERM_I;i++){
+            printf("%d - ",arrI[i]);
+    }
+
+
+}
